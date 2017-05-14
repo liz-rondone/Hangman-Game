@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+</head>
+
+
+
+<script>
+
+	// define the words to use 
+	var randomWordArr = ["pawnee", "eagleton", "breakfast", "swag", "jammed", "wamapoke", "fartattack"];
+	
+	// choose a random word from the array
+	var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
+
+	// global variables
+	var s;
+	var count = 0;
+	// empty array to store guesses
+	var answerArray = [];
+
+	// fill the answer array with underscores
+	function startUp()
+	{
+		for (var i = 0; i < randomWord.length; i++)
+		{
+			answerArray[i] = "_";
+		}
+
+		// put them in a string
+		s = answerArray.join(" ");
+		document.getElementById("answer").innerHTML = s;
+	}
+
+	function Letter()
+	{
+		// here we get the letter that the user types in the box
+		//var letter = document.getElementById("letter").value;
+
+		// make sure we have a guess (more checks can be made here, only letters etc.)
+		if (letter.length > 0) 
+		{
+			for (var i = 0; i < randomWord.length; i++)
+			{
+				// now if the random word contains a letter that the user typed
+				if (randomWord[i] === letter)
+				{
+					// assign it to a letter
+					answerArray[i] = letter;
+				} 
+			}
+
+			// how many times it takes to guess
+			count++;
+			document.getElementById("counter").innerHTML = "Number of clicks: " + count;
+			document.getElementById("answer").innerHTML = answerArray.join(" ");
+		}
+		
+		// annoy
+		/*if(count>5)
+		{
+			document.getElementById("start").innerHTML = "Come on - you should have guessed it by now";
+		}*/
+	}
+
+
+</script>
+
+
+
+<body onload="startUp()">
+	<h1>Guess a letter</h1>
+	<input id="letter" type="text">
+	<input type="button" value="letter" onClick="Letter()"/>
+	<p id="answer"></p>
+	<p id="counter"></p>
+	<p id="stat"></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {box-sizing: border-box;}
+
+.bcolor-black{background-color: black;}
+.bcolor-blue{background-color: blue;}
+.bcolor-green{background-color: green;}
+.bcolor-white{background-color: white;}
+
+.border{border: solid 6px #000000;}
+
+.float-l{float: left;}
+.float-r{float: right;}
+
+.h-300{height: 312px;}
+.h-400{height: 412px}
+.h-700{height: 724px;}
+
+.marg-cntr{margin:0 auto;}
+
+.max-h{max-height: auto;}
+.max-w{max-width: auto;}
+
+.overflow{overflow: auto;}
+
+.pad-30{padding: 30px;}
+
+.vert-cntr{vertical-align: center;}
+
+.w-500{width: 512px;}
+.w-1000{width: 1024px;}
+.w-100pct{width: 100%;}
+
+/* Media Queries */
+@media (max-width: 980px) {
+  }
+
+@media (max-width: 768px) {
+  .mm_w-100pct {width: 100%;}
+  }
+
+@media (max-width: 640px) {
+  .ms_w-100pct {width: 100%;}
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Hangman Game</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="bcolor-black">
+
+	<div class="marg-cntr overflow">
+		
+		<div class="bcolor-blue border float-l h-700 w-500">
+			<img class="max-h max-w" src="assets/images/swag.jpg" alt="Tom Haverford">
+			
+		</div>
+
+		<div>
+
+			<div class="bcolor-green border float-l h-300 w-500">
+				<img class="max-h max-w" src="assets/images/parksnrec-intro.jpg" alt="Parks and Recreation Hangman">
+			</div>
+
+			<div class="bcolor-white border float-l h-400 pad-30 w-500">
+				<p>Press a letter to begin.</p>
+				<p id="answer"></p>
+				<p>Number of guesses remaining: <span id=""></span></p>
+				<p>Letters already guessed: <span id=""></span></p>
+				<p>Number of wins: <span id="">0</span></p>
+			</div>
+
+		</div>
+
+	</div>
+
+<!--
+<body onload="startUp()" class="bcolor-black">
+	<h1>Guess a letter</h1>
+	<input id="letter" type="text">
+	<input type="button" value="letter" onClick="Letter()"/>
+	<p id="answer"></p>
+	<p id="counter"></p>
+	<p id="stat"></p>
+	-->
+	<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
