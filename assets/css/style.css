@@ -7,6 +7,8 @@
 
 .border{border: solid 6px #000000;}
 
+.disp-inline{display: inline;}
+
 .float-l{float: left;}
 .float-r{float: right;}
 
@@ -14,7 +16,7 @@
 .h-400{height: 412px}
 .h-700{height: 724px;}
 
-.marg-cntr{margin:0 auto;}
+.marg-cntr{margin:30px auto;}
 
 .max-h{max-height: auto;}
 .max-w{max-width: auto;}
@@ -34,9 +36,13 @@
   }
 
 @media (max-width: 768px) {
+  .mm_float-0{float: 0;}
+  .mm_h-30pct{height: 40%;}
+  .mm_marg-cntr{margin: 0 auto;}
   .mm_w-100pct {width: 100%;}
   }
 
 @media (max-width: 640px) {
+  .ms_h-30pct{height: 30%;}
   .ms_w-100pct {width: 100%;}
   }
