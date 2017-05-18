@@ -10,7 +10,7 @@
 <script>
 
 	// define the words to use 
-	var randomWordArr = ["pawnee", "eagleton", "breakfast", "swag", "jammed", "wamapoke", "fartattack"];
+	var randomWordArr = ["pawnee", "eagleton", "breakfast", "swag", "jammed", "wamapoke", "fartattack", "sweetums"];
 	
 	// choose a random word from the array
 	var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
@@ -40,6 +40,8 @@
 		//var letter = document.getElementById("letter").value;
 
 		// make sure we have a guess (more checks can be made here, only letters etc.)
+		var letter = document.getElementById("letter").value;
+
 		if (letter.length > 0) 
 		{
 			for (var i = 0; i < randomWord.length; i++)
@@ -59,10 +61,10 @@
 		}
 		
 		// annoy
-		/*if(count>5)
+		if(count>5)
 		{
-			document.getElementById("start").innerHTML = "Come on - you should have guessed it by now";
-		}*/
+			document.getElementById("stat").innerHTML = "Come on - you should have guessed it by now";
+		}
 	}
 
 

@@ -12,6 +12,9 @@
 .float-l{float: left;}
 .float-r{float: right;}
 
+.font-fam{font-family:'Yantramanav', sans-serif;}
+.font-bold{font-weight: bold;}
+
 .h-300{height: 312px;}
 .h-400{height: 412px}
 .h-700{height: 724px;}
