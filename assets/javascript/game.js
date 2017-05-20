@@ -14,7 +14,6 @@
 	// empty array to store guesses
 	var answerArray = [];
 
-	
 
 	// fill the answer array with underscores
 	function startUp()
@@ -70,6 +69,7 @@
 		checkGameEnd();
 	};
 
+
 	function checkGameEnd()
 	{
 		for (var i = 0; i < randomWord.length; i++) 
@@ -88,6 +88,26 @@
 		}
 	};
 
+
+/*// Show lives
+
+var lives ;
+
+	var showLives = document.getElementById("mylives");
+	
+   comments = function () 
+   {
+    if (lives < 1) 
+    {
+      alert("Game Over");
+    }
+    for (var i = 0; i < answerArray.length; i++) 
+    {
+      if (count + blank === answerArray.length) 
+      {
+        alert("You Win!");
+      }
+    }*/
 
 	/*function reset(new) 
 	{
