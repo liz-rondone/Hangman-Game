@@ -25,28 +25,36 @@
 				<img class="max-h max-w mm_w-100pct" src="assets/images/parksnrec-intro.jpg" alt="Parks and Recreation Hangman">
 			</div>
 
-			<div class="bcolor-white border float-l font-fam h-400 pad-30 w-500 mm_w-100pct">
+			<div class="bcolor-white border float-l font-fam h-400 pad-40 w-500 mm_w-100pct">
 				
-				<p>Press a letter to begin.</p>
+				<p class="fs-20 line-h-60">Press a letter to begin.</p>
 
-				<!-- space for guesses -->
-				<h2>Your guess: <span id="user-text"><strong>_</strong></span></h2>
-				<input id="letter" type="text">
-				<!-- button -->
-				<input type="button" value="letter" onClick="Letter()"/>
+				
+
 				
 				<!-- blank letters -->
-				<p id="answer"></p>
+				<p class="fs-40 kern line-h-60 pad-b-30" id="answer"></p>
+
+				<!-- space for guesses -->
+				<h2 class="fs-20 line-h-30">Your guess: <span id="guessed" value="letter"><strong></strong></span></h2>
+				
+				<!--<p class="fs-20 line-h-30">Letters guessed: <span id="user-text"></span></p>-->
 				<!-- number of clicks -->
-				<p id="counter"></p>
-				<!-- insult  -->
-				<p id="stat"></p>
+				<p class="fs-20 line-h-30">Remaining guesses: <span id="counter">/15</span></p>
+				
 
-				<p id="mylives"></p>
+				<!--<p class="fs-20 line-h-30" id="showlives"></p>
+
+				<input id="button" onclick="resetform()" type="button" value="New Game">-->
 
 
 
-				<!--<p>Number of guesses remaining: <span id=""></span></p>
+				<!--
+
+				<input id="letter" type="text">
+				<input type="button"  onClick="Letter()"/>
+
+				<p>Number of guesses remaining: <span id=""></span></p>
 				<p>Letters already guessed: <span id=""></span></p>
 				<p>Number of wins: <span id="">0</span></p>-->
 
@@ -55,7 +63,7 @@
 		</div>
 
 		<div class="bcolor-black border float-r font-bold h-700 w-500 mm_float-0 ms_h-30pct mm_w-100pct">
-			<img class="max-h max-w mm_w-100pct" src="assets/images/breakfast.jpg" alt="Ron Swanson">
+			<img class="max-h max-w mm_w-100pct" src="assets/images/parks-rec.jpg" alt="Ron Swanson">
 			
 		</div>
 

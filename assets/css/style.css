@@ -14,10 +14,17 @@
 
 .font-fam{font-family:'Yantramanav', sans-serif;}
 .font-bold{font-weight: bold;}
+.fs-20{font-size: 20px;}
+.fs-40{font-size: 40px;}
 
 .h-300{height: 312px;}
 .h-400{height: 412px}
 .h-700{height: 724px;}
+
+.kern{letter-spacing: 7px;}
+
+.line-h-30{line-height: 30px;}
+.line-h-60{line-height: 60px;}
 
 .marg-cntr{margin:30px auto;}
 
@@ -26,7 +33,8 @@
 
 .overflow{overflow: auto;}
 
-.pad-30{padding: 30px;}
+.pad-40{padding: 40px;}
+.pad-b-30{padding-bottom: 30px;}
 
 .vert-cntr{vertical-align: center;}
 
